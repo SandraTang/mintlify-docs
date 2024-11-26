@@ -1,15 +1,15 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: 'التطوير'
+description: 'معاينة التغييرات محلياً لتحديث وثائقك'
 ---
 
 <Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding.
+  **متطلب أساسي**: يرجى تثبيت Node.js (الإصدار 19 أو أعلى) قبل المتابعة.
 </Info>
 
-Follow these steps to install and run Mintlify on your operating system:
+اتبع هذه الخطوات لتثبيت وتشغيل Mintlify على نظام التشغيل الخاص بك:
 
-**Step 1**: Install Mintlify:
+**الخطوة 1**: تثبيت Mintlify:
 
 <CodeGroup>
 
@@ -23,31 +23,31 @@ yarn global add mintlify
 
 </CodeGroup>
 
-**Step 2**: Navigate to the docs directory (where the `mint.json` file is located) and execute the following command:
+**الخطوة 2**: انتقل إلى دليل المستندات (حيث يوجد ملف `mint.json`) وقم بتنفيذ الأمر التالي:
 
 ```bash
 mintlify dev
 ```
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+ستكون المعاينة المحلية للوثائق الخاصة بك متاحة على `http://localhost:3000`.
 
-### Custom Ports
+### المنافذ المخصصة
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
+افتراضياً، يستخدم Mintlify المنفذ 3000. يمكنك تخصيص المنفذ الذي يعمل عليه Mintlify باستخدام علامة `--port`. لتشغيل Mintlify على المنفذ 3333، على سبيل المثال، استخدم هذا الأمر:
 
 ```bash
 mintlify dev --port 3333
 ```
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+إذا حاولت تشغيل Mintlify على منفذ قيد الاستخدام بالفعل، فسيستخدم المنفذ التالي المتاح:
 
 ```md
-Port 3000 is already in use. Trying 3001 instead.
+المنفذ 3000 قيد الاستخدام بالفعل. جارٍ محاولة استخدام المنفذ 3001 بدلاً من ذلك.
 ```
 
-## Mintlify Versions
+## إصدارات Mintlify
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
+يرجى ملاحظة أن كل إصدار من واجهة سطر الأوامر (CLI) مرتبط بإصدار معين من Mintlify. إذا لم يتطابق موقعك المحلي مع نسخة الإنتاج، يرجى تحديث واجهة سطر الأوامر:
 
 <CodeGroup>
 
@@ -61,46 +61,45 @@ yarn global upgrade mintlify
 
 </CodeGroup>
 
-## Validating Links
+## التحقق من صحة الروابط
 
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
+يمكن لواجهة سطر الأوامر المساعدة في التحقق من صحة روابط المراجع في وثائقك. للتعرف على أي روابط معطلة، استخدم الأمر التالي:
 
 ```bash
 mintlify broken-links
 ```
 
-## Deployment
+## النشر
 
 <Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
+  محررون غير محدودين متاحون ضمن [الخطة الاحترافية](https://mintlify.com/pricing) وما فوق.
 </Tip>
 
-If the deployment is successful, you should see the following:
+إذا كان النشر ناجحاً، فيجب أن ترى ما يلي:
 
 <Frame>
   <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
 </Frame>
 
-## Code Formatting
+## تنسيق الكود
 
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+نقترح استخدام إضافات على بيئة التطوير المتكاملة (IDE) الخاصة بك للتعرف على MDX وتنسيقه. إذا كنت تستخدم VSCode، فكر في استخدام [إضافة MDX VSCode](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) لإبراز بناء الجملة، و[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) لتنسيق الكود.
 
-## Troubleshooting
+## استكشاف الأخطاء وإصلاحها
 
 <AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
+  <Accordion title='خطأ: تعذر تحميل وحدة "sharp" باستخدام وقت تشغيل darwin-arm64'>
 
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
+    قد يكون هذا بسبب إصدار قديم من node. جرب ما يلي:
+    1. قم بإزالة الإصدار المثبت حالياً من mintlify: `npm remove -g mintlify`
+    2. قم بالترقية إلى Node v19 أو أعلى.
+    3. أعد تثبيت mintlify: `npm install -g mintlify`
   </Accordion>
 
-  <Accordion title="Issue: Encountering an unknown error">
+  <Accordion title="مشكلة: مواجهة خطأ غير معروف">
   
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
+    الحل: انتقل إلى جذر جهازك واحذف المجلد ~/.mintlify. بعد ذلك، قم بتشغيل `mintlify dev` مرة أخرى.
   </Accordion>
 </AccordionGroup>
 
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+هل تريد معرفة ما تغير في إصدار واجهة سطر الأوامر؟ [تحقق من سجل التغييرات الخاص بواجهة سطر الأوامر.](https://www.npmjs.com/package/mintlify?activeTab=versions)
