@@ -1,20 +1,20 @@
 ---
-title: 'Navigation'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+title: 'التنقل'
+description: 'يحدد حقل التنقل في mint.json الصفحات التي تظهر في قائمة التنقل'
 icon: 'map'
 ---
 
-The navigation menu is the list of links on every website.
+قائمة التنقل هي قائمة الروابط الموجودة في كل موقع.
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+من المحتمل أن تقوم بتحديث `mint.json` في كل مرة تضيف فيها صفحة جديدة. الصفحات لا تظهر تلقائياً.
 
-## Navigation syntax
+## صيغة التنقل
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+صيغة التنقل لدينا متكررة مما يعني أنه يمكنك إنشاء مجموعات تنقل متداخلة. لست بحاجة إلى تضمين `.mdx` في أسماء الصفحات.
 
 <CodeGroup>
 
-```json Regular Navigation
+```json التنقل العادي
 "navigation": [
     {
         "group": "Getting Started",
@@ -23,7 +23,7 @@ Our navigation syntax is recursive which means you can make nested navigation gr
 ]
 ```
 
-```json Nested Navigation
+```json التنقل المتداخل
 "navigation": [
     {
         "group": "Getting Started",
@@ -40,19 +40,19 @@ Our navigation syntax is recursive which means you can make nested navigation gr
 
 </CodeGroup>
 
-## Folders
+## المجلدات
 
-Simply put your MDX files in folders and update the paths in `mint.json`.
+ما عليك سوى وضع ملفات MDX في مجلدات وتحديث المسارات في `mint.json`.
 
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
+على سبيل المثال، لإنشاء صفحة في `https://yoursite.com/your-folder/your-page` ستقوم بإنشاء مجلد يسمى `your-folder` يحتوي على ملف MDX يسمى `your-page.mdx`.
 
 <Warning>
 
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
+لا يمكنك استخدام `api` كاسم لمجلد إلا إذا قمت بتضمينه داخل مجلد آخر. يستخدم Mintlify إطار Next.js الذي يحتفظ بمجلد `api` على المستوى الأعلى لاستدعاءات الخادم الداخلية. سيتم قبول اسم مجلد مثل `api-reference`.
 
 </Warning>
 
-```json Navigation With Folder
+```json التنقل مع المجلد
 "navigation": [
     {
         "group": "Group Name",
@@ -61,6 +61,8 @@ You cannot use `api` for the name of a folder unless you nest it inside another 
 ]
 ```
 
-## Hidden Pages
+## الصفحات المخفية
 
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+لن تظهر ملفات MDX غير المضمنة في `mint.json` في الشريط الجانبي ولكن يمكن الوصول إليها من خلال شريط البحث وعن طريق الربط المباشر بها.
+</newContent>
+</invoke>

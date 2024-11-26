@@ -1,6 +1,6 @@
 ---
-title: 'Images and Embeds'
-description: 'Add image, video, and other HTML elements'
+title: 'الصور والمضمنات'
+description: 'إضافة الصور والفيديو وعناصر HTML الأخرى'
 icon: 'image'
 ---
 
@@ -9,33 +9,33 @@ icon: 'image'
   src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
 />
 
-## Image
+## الصور
 
-### Using Markdown
+### استخدام ماركداون
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+يتيح لك [بناء جملة ماركداون](https://www.markdownguide.org/basic-syntax/#images) إضافة الصور باستخدام الكود التالي
 
 ```md
 ![title](/path/image.jpg)
 ```
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+لاحظ أن حجم ملف الصورة يجب أن يكون أقل من 5 ميجابايت. وإلا، نوصي باستضافتها على خدمة مثل [Cloudinary](https://cloudinary.com/) أو [S3](https://aws.amazon.com/s3/). يمكنك بعد ذلك استخدام عنوان URL هذا وتضمينه.
 
-### Using Embeds
+### استخدام المضمنات
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+للحصول على مزيد من إمكانية التخصيص مع الصور، يمكنك أيضًا استخدام [المضمنات](/writing-content/embed) لإضافة الصور
 
 ```html
 <img height="200" src="/path/image.jpg" />
 ```
 
-## Embeds and HTML elements
+## المضمنات وعناصر HTML
 
 <iframe
   width="560"
   height="315"
   src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
+  title="مشغل فيديو YouTube"
   frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
@@ -46,13 +46,13 @@ To get more customizability with images, you can also use [embeds](/writing-cont
 
 <Tip>
 
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
+يدعم Mintlify [وسوم HTML في ماركداون](https://www.markdownguide.org/basic-syntax/#html). هذا مفيد إذا كنت تفضل وسوم HTML على بناء جملة ماركداون، ويتيح لك إنشاء وثائق بمرونة لا نهائية.
 
 </Tip>
 
-### iFrames
+### إطارات IFrame
 
-Loads another HTML page within the document. Most commonly used for embedding videos.
+يقوم بتحميل صفحة HTML أخرى داخل المستند. يستخدم غالبًا لتضمين مقاطع الفيديو.
 
 ```html
 <iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
