@@ -1,0 +1,39 @@
+# Error Handling
+
+Error handling is an essential part of robust application development. Here's how to work with console errors:
+
+## Console Error Examples
+
+### Basic Console Error
+```javascript
+console.error('This is a basic error message');
+```
+
+### Error Object in Console
+```javascript
+try {
+  // Attempting to access undefined property
+  const obj = null;
+  obj.property;
+} catch (error) {
+  console.error('An error occurred:', error);
+}
+```
+
+### Custom Error with Stack Trace
+```javascript
+try {
+  throw new Error('Custom error message');
+} catch (error) {
+  console.error('Error details:', {
+    message: error.message,
+    stack: error.stack
+  });
+}
+```
+
+## Best Practices
+- Use `console.error()` for error messages instead of `console.log()`
+- Include meaningful error messages that help with debugging
+- Consider including relevant context when logging errors
+- In production, ensure sensitive information isn't exposed in error logs
