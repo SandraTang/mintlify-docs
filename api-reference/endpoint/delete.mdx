@@ -2,3 +2,14 @@
 title: 'Delete Plant'
 openapi: 'DELETE /plants/{id}'
 ---
+
+### Example Error Response
+
+```javascript
+// If the plant ID doesn't exist
+console.error('Error deleting plant:', {
+  status: 404,
+  error: 'Plant not found',
+  message: 'The specified plant ID does not exist'
+});
+```

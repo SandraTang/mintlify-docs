@@ -2,3 +2,29 @@
 title: 'Create Plant'
 openapi: 'POST /plants'
 ---
+
+## Example Request - Invalid Input
+
+```bash
+curl -X POST https://api.example.com/plants \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "",
+    "type": "invalid_plant_type"
+  }'
+```
+
+This invalid request will result in a console error due to:
+1. Empty plant name
+2. Invalid plant type value
+
+```json Response
+{
+  "error": "ValidationError",
+  "message": "Invalid input parameters",
+  "details": {
+    "name": "Plant name cannot be empty",
+    "type": "Plant type must be one of: [indoor, outdoor, succulent]"
+  }
+}
+```
