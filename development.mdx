@@ -1,15 +1,15 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: 'Ανάπτυξη'
+description: 'Προεπισκόπηση αλλαγών τοπικά για ενημέρωση των εγγράφων σας'
 ---
 
 <Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding.
+  **Προαπαιτούμενο**: Παρακαλώ εγκαταστήστε το Node.js (έκδοση 19 ή νεότερη) πριν συνεχίσετε.
 </Info>
 
-Follow these steps to install and run Mintlify on your operating system:
+Ακολουθήστε αυτά τα βήματα για να εγκαταστήσετε και να εκτελέσετε το Mintlify στο λειτουργικό σας σύστημα:
 
-**Step 1**: Install Mintlify:
+**Βήμα 1**: Εγκατάσταση Mintlify:
 
 <CodeGroup>
 
@@ -23,31 +23,31 @@ yarn global add mintlify
 
 </CodeGroup>
 
-**Step 2**: Navigate to the docs directory (where the `mint.json` file is located) and execute the following command:
+**Βήμα 2**: Μεταβείτε στον κατάλογο εγγράφων (όπου βρίσκεται το αρχείο `mint.json`) και εκτελέστε την ακόλουθη εντολή:
 
 ```bash
 mintlify dev
 ```
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+Μια τοπική προεπισκόπηση των εγγράφων σας θα είναι διαθέσιμη στη διεύθυνση `http://localhost:3000`.
 
-### Custom Ports
+### Προσαρμοσμένες Θύρες
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
+Από προεπιλογή, το Mintlify χρησιμοποιεί τη θύρα 3000. Μπορείτε να προσαρμόσετε τη θύρα στην οποία εκτελείται το Mintlify χρησιμοποιώντας τη σημαία `--port`. Για να εκτελέσετε το Mintlify στη θύρα 3333, για παράδειγμα, χρησιμοποιήστε αυτή την εντολή:
 
 ```bash
 mintlify dev --port 3333
 ```
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+Εάν προσπαθήσετε να εκτελέσετε το Mintlify σε μια θύρα που χρησιμοποιείται ήδη, θα χρησιμοποιήσει την επόμενη διαθέσιμη θύρα:
 
 ```md
-Port 3000 is already in use. Trying 3001 instead.
+Η θύρα 3000 χρησιμοποιείται ήδη. Δοκιμή της θύρας 3001.
 ```
 
-## Mintlify Versions
+## Εκδόσεις Mintlify
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
+Παρακαλώ σημειώστε ότι κάθε έκδοση του CLI συνδέεται με μια συγκεκριμένη έκδοση του Mintlify. Εάν ο τοπικός σας ιστότοπος δεν ευθυγραμμίζεται με την έκδοση παραγωγής, παρακαλώ ενημερώστε το CLI:
 
 <CodeGroup>
 
@@ -61,46 +61,45 @@ yarn global upgrade mintlify
 
 </CodeGroup>
 
-## Validating Links
+## Επικύρωση Συνδέσμων
 
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
+Το CLI μπορεί να βοηθήσει στην επικύρωση των συνδέσμων αναφοράς στα έγγραφά σας. Για να εντοπίσετε τυχόν σπασμένους συνδέσμους, χρησιμοποιήστε την ακόλουθη εντολή:
 
 ```bash
 mintlify broken-links
 ```
 
-## Deployment
+## Ανάπτυξη
 
 <Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
+  Απεριόριστοι συντάκτες διαθέσιμοι στο [Pro Plan](https://mintlify.com/pricing) και άνω.
 </Tip>
 
-If the deployment is successful, you should see the following:
+Εάν η ανάπτυξη είναι επιτυχής, θα πρέπει να δείτε τα εξής:
 
 <Frame>
   <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
 </Frame>
 
-## Code Formatting
+## Μορφοποίηση Κώδικα
 
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+Προτείνουμε τη χρήση επεκτάσεων στο IDE σας για την αναγνώριση και μορφοποίηση MDX. Εάν είστε χρήστης VSCode, εξετάστε την [επέκταση MDX VSCode](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) για επισήμανση σύνταξης και το [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) για μορφοποίηση κώδικα.
 
-## Troubleshooting
+## Αντιμετώπιση Προβλημάτων
 
 <AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
+  <Accordion title='Σφάλμα: Δεν ήταν δυνατή η φόρτωση της μονάδας "sharp" χρησιμοποιώντας το darwin-arm64 runtime'>
 
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
+    Αυτό μπορεί να οφείλεται σε παλιά έκδοση του node. Δοκιμάστε τα εξής:
+    1. Αφαιρέστε την τρέχουσα εγκατεστημένη έκδοση του mintlify: `npm remove -g mintlify`
+    2. Αναβαθμίστε στο Node v19 ή νεότερο.
+    3. Επανεγκαταστήστε το mintlify: `npm install -g mintlify`
   </Accordion>
 
-  <Accordion title="Issue: Encountering an unknown error">
+  <Accordion title="Πρόβλημα: Αντιμετώπιση άγνωστου σφάλματος">
   
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
+    Λύση: Πηγαίνετε στη ρίζα της συσκευής σας και διαγράψτε το φάκελο ~/.mintlify. Στη συνέχεια, εκτελέστε ξανά το `mintlify dev`.
   </Accordion>
 </AccordionGroup>
 
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+Περίεργοι για το τι άλλαξε στην έκδοση CLI; [Δείτε το changelog του CLI.](https://www.npmjs.com/package/mintlify?activeTab=versions)
