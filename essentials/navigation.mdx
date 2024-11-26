@@ -1,20 +1,20 @@
 ---
-title: 'Navigation'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+title: 'Πλοήγηση'
+description: 'Το πεδίο πλοήγησης στο mint.json καθορίζει τις σελίδες που εμφανίζονται στο μενού πλοήγησης'
 icon: 'map'
 ---
 
-The navigation menu is the list of links on every website.
+Το μενού πλοήγησης είναι η λίστα συνδέσμων σε κάθε ιστοσελίδα.
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+Πιθανότατα θα ενημερώνετε το `mint.json` κάθε φορά που προσθέτετε μια νέα σελίδα. Οι σελίδες δεν εμφανίζονται αυτόματα.
 
-## Navigation syntax
+## Σύνταξη πλοήγησης
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+Η σύνταξη πλοήγησής μας είναι αναδρομική, που σημαίνει ότι μπορείτε να δημιουργήσετε ένθετες ομάδες πλοήγησης. Δεν χρειάζεται να συμπεριλάβετε το `.mdx` στα ονόματα των σελίδων.
 
 <CodeGroup>
 
-```json Regular Navigation
+```json Κανονική Πλοήγηση
 "navigation": [
     {
         "group": "Getting Started",
@@ -23,7 +23,7 @@ Our navigation syntax is recursive which means you can make nested navigation gr
 ]
 ```
 
-```json Nested Navigation
+```json Ένθετη Πλοήγηση
 "navigation": [
     {
         "group": "Getting Started",
@@ -40,19 +40,19 @@ Our navigation syntax is recursive which means you can make nested navigation gr
 
 </CodeGroup>
 
-## Folders
+## Φάκελοι
 
-Simply put your MDX files in folders and update the paths in `mint.json`.
+Απλά τοποθετήστε τα αρχεία MDX σε φακέλους και ενημερώστε τις διαδρομές στο `mint.json`.
 
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
+Για παράδειγμα, για να έχετε μια σελίδα στη διεύθυνση `https://yoursite.com/your-folder/your-page` θα πρέπει να δημιουργήσετε έναν φάκελο με όνομα `your-folder` που περιέχει ένα αρχείο MDX με όνομα `your-page.mdx`.
 
 <Warning>
 
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
+Δεν μπορείτε να χρησιμοποιήσετε το `api` ως όνομα φακέλου εκτός αν το τοποθετήσετε μέσα σε άλλον φάκελο. Το Mintlify χρησιμοποιεί το Next.js που δεσμεύει τον φάκελο `api` ανώτατου επιπέδου για εσωτερικές κλήσεις διακομιστή. Ένα όνομα φακέλου όπως το `api-reference` θα γινόταν αποδεκτό.
 
 </Warning>
 
-```json Navigation With Folder
+```json Πλοήγηση με Φάκελο
 "navigation": [
     {
         "group": "Group Name",
@@ -61,6 +61,6 @@ You cannot use `api` for the name of a folder unless you nest it inside another 
 ]
 ```
 
-## Hidden Pages
+## Κρυφές Σελίδες
 
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+Τα αρχεία MDX που δεν περιλαμβάνονται στο `mint.json` δεν θα εμφανίζονται στην πλευρική γραμμή αλλά είναι προσβάσιμα μέσω της γραμμής αναζήτησης και με απευθείας σύνδεση σε αυτά.

@@ -1,6 +1,6 @@
 ---
-title: 'Images and Embeds'
-description: 'Add image, video, and other HTML elements'
+title: 'Εικόνες και Ενσωματώσεις'
+description: 'Προσθήκη εικόνων, βίντεο και άλλων στοιχείων HTML'
 icon: 'image'
 ---
 
@@ -9,27 +9,27 @@ icon: 'image'
   src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
 />
 
-## Image
+## Εικόνα
 
-### Using Markdown
+### Χρήση Markdown
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+Η [σύνταξη markdown](https://www.markdownguide.org/basic-syntax/#images) σας επιτρέπει να προσθέτετε εικόνες χρησιμοποιώντας τον ακόλουθο κώδικα
 
 ```md
 ![title](/path/image.jpg)
 ```
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+Σημειώστε ότι το μέγεθος του αρχείου εικόνας πρέπει να είναι μικρότερο από 5MB. Διαφορετικά, συνιστούμε τη φιλοξενία σε μια υπηρεσία όπως το [Cloudinary](https://cloudinary.com/) ή το [S3](https://aws.amazon.com/s3/). Στη συνέχεια, μπορείτε να χρησιμοποιήσετε αυτό το URL και να το ενσωματώσετε.
 
-### Using Embeds
+### Χρήση Ενσωματώσεων
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+Για περισσότερη προσαρμοστικότητα με τις εικόνες, μπορείτε επίσης να χρησιμοποιήσετε [ενσωματώσεις](/writing-content/embed) για να προσθέσετε εικόνες
 
 ```html
 <img height="200" src="/path/image.jpg" />
 ```
 
-## Embeds and HTML elements
+## Ενσωματώσεις και στοιχεία HTML
 
 <iframe
   width="560"
@@ -46,13 +46,13 @@ To get more customizability with images, you can also use [embeds](/writing-cont
 
 <Tip>
 
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
+Το Mintlify υποστηρίζει [ετικέτες HTML σε Markdown](https://www.markdownguide.org/basic-syntax/#html). Αυτό είναι χρήσιμο αν προτιμάτε τις ετικέτες HTML από τη σύνταξη Markdown και σας επιτρέπει να δημιουργήσετε τεκμηρίωση με απεριόριστη ευελιξία.
 
 </Tip>
 
 ### iFrames
 
-Loads another HTML page within the document. Most commonly used for embedding videos.
+Φορτώνει μια άλλη σελίδα HTML μέσα στο έγγραφο. Χρησιμοποιείται συνήθως για την ενσωμάτωση βίντεο.
 
 ```html
 <iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
