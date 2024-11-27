@@ -81,6 +81,39 @@
         "api-reference/endpoint/create",
         "api-reference/endpoint/delete"
       ]
+    },
+    {
+      "group": "Get Started",
+      "pages": [
+        "api-reference/introduction",
+        "es/quickstart",
+        "es/development"
+      ]
+    },
+    {
+      "group": "Essentials",
+      "pages": [
+        "es/essentials/markdown",
+        "es/essentials/code",
+        "es/essentials/images",
+        "es/essentials/settings",
+        "es/essentials/navigation",
+        "es/essentials/reusable-snippets"
+      ]
+    },
+    {
+      "group": "API Documentation",
+      "pages": [
+        "es/api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Endpoint Examples",
+      "pages": [
+        "es/api-reference/endpoint/get",
+        "es/api-reference/endpoint/create",
+        "es/api-reference/endpoint/delete"
+      ]
     }
   ],
   "footerSocials": {
