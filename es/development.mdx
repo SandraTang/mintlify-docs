@@ -4,12 +4,12 @@ description: 'Vista previa de cambios localmente para actualizar tu documentaci�
 ---
 
 <Info>
-  **Prerrequisito**: Por favor, instala Node.js (versión 19 o superior) antes de continuar.
+  **Prerequisito**: Por favor, instala Node.js (versión 19 o superior) antes de continuar.
 </Info>
 
 Sigue estos pasos para instalar y ejecutar Mintlify en tu sistema operativo:
 
-**Paso 1**: Instala Mintlify:
+**Paso 1**: Instalar Mintlify:
 
 <CodeGroup>
 
@@ -42,12 +42,12 @@ mintlify dev --port 3333
 Si intentas ejecutar Mintlify en un puerto que ya está en uso, utilizará el siguiente puerto disponible:
 
 ```md
-El puerto 3000 ya está en uso. Intentando con el puerto 3001.
+Port 3000 is already in use. Trying 3001 instead.
 ```
 
 ## Versiones de Mintlify
 
-Ten en cuenta que cada versión de la CLI está asociada con una versión específica de Mintlify. Si tu sitio web local no coincide con la versión de producción, actualiza la CLI:
+Ten en cuenta que cada versión del CLI está asociada con una versión específica de Mintlify. Si tu sitio web local no coincide con la versión de producción, por favor actualiza el CLI:
 
 <CodeGroup>
 
@@ -63,7 +63,7 @@ yarn global upgrade mintlify
 
 ## Validación de Enlaces
 
-La CLI puede ayudar con la validación de enlaces de referencia en tu documentación. Para identificar enlaces rotos, usa el siguiente comando:
+El CLI puede ayudar con la validación de enlaces de referencia en tu documentación. Para identificar enlaces rotos, utiliza el siguiente comando:
 
 ```bash
 mintlify broken-links
@@ -72,7 +72,7 @@ mintlify broken-links
 ## Despliegue
 
 <Tip>
-  Editores ilimitados disponibles bajo el [Plan Pro](https://mintlify.com/pricing) y superior.
+  Editores ilimitados disponibles bajo el [Plan Pro](https://mintlify.com/pricing) y superiores.
 </Tip>
 
 Si el despliegue es exitoso, deberías ver lo siguiente:
@@ -88,7 +88,7 @@ Sugerimos usar extensiones en tu IDE para reconocer y formatear MDX. Si eres usu
 ## Solución de Problemas
 
 <AccordionGroup>
-  <Accordion title='Error: No se pudo cargar el módulo "sharp" usando el runtime darwin-arm64'>
+  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
 
     Esto puede deberse a una versión desactualizada de node. Intenta lo siguiente:
     1. Elimina la versión actualmente instalada de mintlify: `npm remove -g mintlify`
@@ -102,4 +102,4 @@ Sugerimos usar extensiones en tu IDE para reconocer y formatear MDX. Si eres usu
   </Accordion>
 </AccordionGroup>
 
-¿Tienes curiosidad sobre qué cambió en la versión de la CLI? [Consulta el registro de cambios de la CLI.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+¿Tienes curiosidad sobre qué cambió en la versión del CLI? [Consulta el registro de cambios del CLI.](https://www.npmjs.com/package/mintlify?activeTab=versions)
