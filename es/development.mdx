@@ -1,15 +1,15 @@
 ---
 title: 'Desarrollo'
-description: 'Vista previa de cambios localmente para actualizar tu documentación'
+description: 'Previsualiza cambios localmente para actualizar tu documentación'
 ---
 
 <Info>
-  **Prerrequisito**: Por favor, instala Node.js (versión 19 o superior) antes de continuar.
+  **Prerrequisito**: Por favor instala Node.js (versión 19 o superior) antes de continuar.
 </Info>
 
 Sigue estos pasos para instalar y ejecutar Mintlify en tu sistema operativo:
 
-**Paso 1**: Instalar Mintlify:
+**Paso 1**: Instala Mintlify:
 
 <CodeGroup>
 
@@ -33,7 +33,7 @@ Una vista previa local de tu documentación estará disponible en `http://localh
 
 ### Puertos Personalizados
 
-Por defecto, Mintlify utiliza el puerto 3000. Puedes personalizar el puerto en el que se ejecuta Mintlify usando el indicador `--port`. Para ejecutar Mintlify en el puerto 3333, por ejemplo, usa este comando:
+Por defecto, Mintlify utiliza el puerto 3000. Puedes personalizar el puerto en el que se ejecuta Mintlify usando la bandera `--port`. Para ejecutar Mintlify en el puerto 3333, por ejemplo, usa este comando:
 
 ```bash
 mintlify dev --port 3333
@@ -42,12 +42,12 @@ mintlify dev --port 3333
 Si intentas ejecutar Mintlify en un puerto que ya está en uso, utilizará el siguiente puerto disponible:
 
 ```md
-El puerto 3000 ya está en uso. Intentando con el puerto 3001.
+Port 3000 is already in use. Trying 3001 instead.
 ```
 
 ## Versiones de Mintlify
 
-Ten en cuenta que cada versión del CLI está asociada con una versión específica de Mintlify. Si tu sitio web local no coincide con la versión de producción, actualiza el CLI:
+Ten en cuenta que cada versión de la CLI está asociada con una versión específica de Mintlify. Si tu sitio web local no coincide con la versión de producción, por favor actualiza la CLI:
 
 <CodeGroup>
 
@@ -63,7 +63,7 @@ yarn global upgrade mintlify
 
 ## Validación de Enlaces
 
-El CLI puede ayudar con la validación de enlaces de referencia en tu documentación. Para identificar enlaces rotos, utiliza el siguiente comando:
+La CLI puede ayudar con la validación de enlaces de referencia en tu documentación. Para identificar enlaces rotos, utiliza el siguiente comando:
 
 ```bash
 mintlify broken-links
@@ -83,12 +83,12 @@ Si el despliegue es exitoso, deberías ver lo siguiente:
 
 ## Formato de Código
 
-Sugerimos usar extensiones en tu IDE para reconocer y formatear MDX. Si eres usuario de VSCode, considera la [extensión MDX VSCode](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) para resaltado de sintaxis y [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) para el formato de código.
+Sugerimos usar extensiones en tu IDE para reconocer y formatear MDX. Si eres usuario de VSCode, considera la [extensión MDX VSCode](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) para el resaltado de sintaxis y [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) para el formato de código.
 
 ## Solución de Problemas
 
 <AccordionGroup>
-  <Accordion title='Error: No se pudo cargar el módulo "sharp" usando el runtime darwin-arm64'>
+  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
 
     Esto puede deberse a una versión desactualizada de node. Intenta lo siguiente:
     1. Elimina la versión actualmente instalada de mintlify: `npm remove -g mintlify`
@@ -102,4 +102,4 @@ Sugerimos usar extensiones en tu IDE para reconocer y formatear MDX. Si eres usu
   </Accordion>
 </AccordionGroup>
 
-¿Tienes curiosidad sobre qué cambió en la versión del CLI? [Consulta el registro de cambios del CLI.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+¿Tienes curiosidad sobre qué cambió en la versión de CLI? [Consulta el registro de cambios de la CLI.](https://www.npmjs.com/package/mintlify?activeTab=versions)
